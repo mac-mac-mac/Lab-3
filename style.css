@@ -1,0 +1,63 @@
+body {
+  color: #7765E3;
+  background-color: #080708;
+}
+
+nav {
+  background-color: #36827F;
+  text-align: center;
+}
+
+h1 {
+  color: #6FFFE9;
+  text-align: center;
+}
+
+h2 {
+  color: #f9db6d;
+  text-align: center;
+  text-decoration: underline;
+}
+
+nav {
+  border-style: solid;
+  padding: 1px;
+}
+
+a {
+  font-family: Arial;
+  color: #6FFFE9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-style: solid;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+}
+
+footer {
+  color: #6FFFE9;
+  text-align: center;
+}
+
+.main_logo {
+  background-color: #f9db6d;
+  text-align: center;
+  border-style: solid;
+}
+
+.lab1pic {
+  background-color: #f9db6d;
+  text-align: center;
+  border-style: solid;
+}
+
+.maintext {
+  color: #f9db6d;
+  text-align: center;
+}
