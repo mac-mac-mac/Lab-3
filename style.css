@@ -3,9 +3,15 @@ body {
   background-color: #080708;
 }
 
+main {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav {
-  background-color: #36827F;
   text-align: center;
+  padding: 1px;
 }
 
 h1 {
@@ -19,9 +25,19 @@ h2 {
   text-decoration: underline;
 }
 
-nav {
-  border-style: solid;
-  padding: 1px;
+h3 {
+  font-family: Arial, sans-serif;
+  color: #f9db6d;
+}
+
+h4 {
+  font-family: Arial, sans-serif;
+  color: #6FFFE9;
+}
+
+span > a {
+  display: block;
+  background-color: #36827F;
 }
 
 a {
@@ -31,6 +47,16 @@ a {
   font-weight: bold;
   padding: 5px;
   border-style: solid;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
 }
 
 img {
@@ -43,6 +69,13 @@ img {
 footer {
   color: #6FFFE9;
   text-align: center;
+  background-color: #36827F;
+  border-style: solid;
+  padding: 1px;
+}
+
+a:hover {
+  background-color: #7765E3;
 }
 
 .main_logo {
@@ -55,9 +88,49 @@ footer {
   background-color: #f9db6d;
   text-align: center;
   border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .maintext {
   color: #f9db6d;
   text-align: center;
+}
+
+.instructions {
+  background-color: #6FFFE9;
+  border-style: solid;
+}
+
+.header {grid-area: header;}
+.nav {grid-area: nav;}
+.main {grid-area: main;}
+.footer {grid-area: footer;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'nav nav main main main'
+    'footer footer footer footer footer';
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+
+.meat {
+  background-color: salmon;
+}
+
+.veg {
+  background-color: lightgreen;
+}
+
+.dairy {
+  background-color: khaki;
+}
+
+.other {
+  background-color: snow;
 }
