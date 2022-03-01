@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>CSPC 2125: Labs 1-6 Portfolio</title>
+    <link href="lab6.css" rel="stylesheet" type:"text/css"/>
+  </head>
+
+  <body>
+    
+    <div class="grid-container">
+
+      <header class="header">
+        <h1>
+          CPSC 2125 - INTERNET PROGRAMMING
+        </h1>
+  
+        <p class="main_logo">
+          <img src="images/Looped_cursive_alphabet.jpg" alt="Looped Cursive Alphabet">
+          <cite>
+            "File:Looped cursive alphabet.jpg" by Thincat is licensed under CC0 1.0
+          </cite>
+        </p>
+
+        <h2>
+          LAB 6
+        </h2>
+        
+      </header>
+  
+      <nav class="nav">
+        <span>
+          <a href="index.html">INDEX</a>
+          <a href="Lab1.html">LAB 1</a>
+          <a href="Lab2.html">LAB 2</a>
+          <a href="Lab3.html">LAB 3</a>
+          <a href="Lab4.html">LAB 4</a>
+          <a href="Lab5.html">LAB 5</a>
+          <a href="Lab6.html">LAB 6</a>
+        </span>
+      </nav>
+
+      <section class="section">
+
+        <h3 class="center">
+          This is a Section
+        </h3>
+
+        <p class="italic">
+          Add the lab6.html file to your repl. Add a new CSS file, lab6.css. Modify the existing CSS link to use lab6.css. Change the title. Add a hyperlink to Lab 6 to all existing pages. Note that in Lab 6, the menu items will have to display inline instead of block, so they can sit side-by-side. No bullets or underlines on the menu items. Make them look like buttons with CSS. Use semantic tags as shown. So that every part of the layout is clearly visible, please add a different background color to each. Add appropriate text (Lab 6 in the header, the footer info from Lab 5 in the footer), the menu items for your site in the nav. For the section, article, and aside you can use placeholder text. Please create attractive styles for the text items. Add three buttons to the article section. When pressed, each button should turn the background color of just the article section another color. Label each of the buttons with the color that it changes the background color to. You will need to use Javascript to accomplish this. 
+        </p>
+
+        <p class="monospace">
+          Check out the new rounded links in the navbar at the top of this page! They expand when you hover over them!
+        </p>
+
+      </section>
+
+      <article class="article" id="article">
+
+        <h3 class="center">
+          This is an Article
+        </h3>
+
+        <p class="center">
+          Click one of the buttons below to change the background color of the article:
+        </p>
+        
+        <p class="center">
+          <button type="button" onclick="makeArticleBlue();">Blue</button>
+          <button type="button" onclick="makeArticleOrange();">Orange</button>
+          <button type="button" onclick="makeArticleGreen();">Green</button>
+        </p>
+        
+      </article>
+
+      <aside class="aside">
+
+        <h3 class="center">
+          This is an Aside
+        </h3>
+        
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus metus aliquam eleifend mi in. Nunc non blandit massa enim nec. Curabitur vitae nunc sed velit dignissim. Sit amet commodo nulla facilisi nullam vehicula ipsum a. Mattis enim ut tellus elementum sagittis vitae et leo duis. Lorem ipsum dolor sit amet consectetur adipiscing. Egestas erat imperdiet sed euismod. Eu consequat ac felis donec. Fames ac turpis egestas sed tempus urna. Elit eget gravida cum sociis natoque penatibus.
+        </p>
+
+        <p>
+          Lacus viverra vitae congue eu consequat ac felis donec. Sed nisi lacus sed viverra tellus in hac habitasse platea. Accumsan in nisl nisi scelerisque eu ultrices. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Ut faucibus pulvinar elementum integer enim neque volutpat. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Feugiat nibh sed pulvinar proin. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Libero justo laoreet sit amet cursus. Diam quis enim lobortis scelerisque fermentum. Pharetra pharetra massa massa ultricies mi quis. Massa tempor nec feugiat nisl pretium fusce. Nunc consequat interdum varius sit.
+        </p>
+
+        <p>
+          Sociis natoque penatibus et magnis. Maecenas sed enim ut sem viverra aliquet eget sit amet. Nulla facilisi etiam dignissim diam quis enim lobortis. Elementum nibh tellus molestie nunc non. Faucibus scelerisque eleifend donec pretium vulputate sapien. Mauris a diam maecenas sed. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Arcu dictum varius duis at consectetur lorem donec massa sapien. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Ornare quam viverra orci sagittis eu volutpat odio facilisis. Magna fermentum iaculis eu non diam. Massa sed elementum tempus egestas sed. Augue eget arcu dictum varius duis at. Lacus suspendisse faucibus interdum posuere. Vitae auctor eu augue ut lectus. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Orci ac auctor augue mauris.
+        </p>
+      </aside>
+  
+      <footer class="footer">
+        <p>Use the links at the top of the page to navigate to a specific Lab page.</p>
+
+        <p>
+          Webmaster: Mac Barron<br>
+          barron_mackenzie@columbusstate.edu
+        </p>
+
+        <p>Last Updated: <span id="update_date"></span></p>
+      </footer>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>

@@ -3,18 +3,10 @@ body {
   background-color: #3A4454;
 }
 
-main {
-  width: 75vw;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  border: solid #531C21;
-  background-color: #979dac;
-}
-
 nav {
   text-align: center;
   padding: 1px;
+  margin: 10px;
 }
 
 h1 {
@@ -37,7 +29,7 @@ h3, h4 {
 }
 
 a {
-  display: block;
+  display: inline-block;
   background-color: #531C21;
   font-family: Arial;
   color:#BFAE48;
@@ -45,6 +37,7 @@ a {
   font-weight: bold;
   padding: 5px;
   border-style: solid;
+  border-radius: 15px;
 }
 
 ul {
@@ -73,6 +66,8 @@ footer {
 
 a:hover {
   background-color: #979dac;
+  font-size: 150%;
+  border-radius: 20px;
 }
 
 .main_logo {
@@ -85,37 +80,20 @@ a:hover {
   width: 500px;
 }
 
-.lab1pic {
-  background-color: #3A4454;
-  text-align: center;
-  border-style: solid;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.maintext {
-  color: #252323;
-  text-align: center;
-}
-
-.instructions {
-  background-color:#531C21;
-  border-style: solid;
-  font-style: italic;
-  color: #BFAE48;
-  padding: 5px;
-}
-
 .header {grid-area: header;}
 .nav {grid-area: nav;}
-.main {grid-area: main;}
 .footer {grid-area: footer;}
+.section {grid-area:section;}
+.article {grid-area: article;}
+.aside {grid-area: aside;}
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header'
-    'nav main'
+    'nav nav'
+    'section aside'
+    'article aside'
     'footer footer';
   grid-template-columns: 'auto auto';
   grid-gap: 5px;
@@ -123,30 +101,64 @@ a:hover {
   padding: 5px;
 }
 
-.meat {
-  background-color: salmon;
-}
-
-.veg {
-  background-color: lightgreen;
-}
-
-.dairy {
-  background-color: khaki;
-}
-
-.other {
-  background-color: snow;
-}
-
 .italic {
   font-style: italic;
 }
 
-.form_choice {
-  color: #3A4454;
-}
-
 cite:hover {
   background-color: #979dac;
+}
+
+section, article, aside {
+  margin: 10px;
+  padding: 10px;
+}
+
+section {
+  border: solid #2F1847;
+  background-color: #DDDBF1;
+}
+
+section, section > h3 {
+  color: #482773;
+}
+
+article {
+  border: solid #8FB339;
+  background-color: #C7D59F;
+}
+
+article, article > h3 {
+  color: #363636;
+}
+
+aside {
+  border: solid #EF9CDA;
+  background-color: #FECEF1;
+}
+
+aside, aside > h3 {
+  color: #92374D;
+}
+
+.center {
+  text-align: center;
+}
+
+.monospace {
+  font-family: "Courier New", monospace;
+}
+
+button {
+  color: #363636;
+  background-color: #BDC2BF;
+  border: solid #363636;
+  border-radius: 15px;
+  font: bold 125% "Courier New", monospace;
+}
+
+button:hover {
+  color: #BDC2BF;
+  background-color: #25291C;
+  border: solid #BDC2BF;
 }
